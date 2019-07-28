@@ -1,7 +1,12 @@
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
+import {
+  MatSidenavModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatListModule,
+} from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { NavigationComponent } from './components/navigation.component';
@@ -14,10 +19,19 @@ import { NavigationComponent } from './components/navigation.component';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    MatMenuModule,
+    MatSidenavModule,
+    MatToolbarModule,
     MatIconModule,
+    MatListModule,
+    FlexLayoutModule,
   ],
-  exports: [NavigationComponent],
+  exports: [
+    NavigationComponent,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+  ],
   providers: [],
 })
 export class NavigationModule { }
