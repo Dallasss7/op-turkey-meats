@@ -1,15 +1,19 @@
-mat-toolbar {
+.op-navigation {
 	background-color: #fff;
 	color: #282828;
-	// box-shadow: 0 8px 24px rgba(0,0,0,.13);
-}
 
-a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:hover,
-  a:active {
-    color: lightgray;
-  }
+	h1 {
+		cursor: pointer;
+	}
+
+	&__options {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+
+		span {
+			margin-right: 1em;
+			cursor: pointer;
+		}
+	}
+}
