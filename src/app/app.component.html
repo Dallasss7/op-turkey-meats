@@ -1,10 +1,15 @@
-<mat-toolbar class="op-navigation">
+<mat-toolbar #nav class="op-navigation">
 	<h1 routerLink="/" routerLinkActive="active">Operation Turkey Meats</h1>
 	<div class="op-navigation__options">
 		<span routerLink="/donate" routerLinkActive="active">Donate</span>
 		<span routerLink="/about" routerLinkActive="active">About</span>
 	</div>
 </mat-toolbar>
+<div class="banner_images">
+	<img src="../assets/cooper.jpg" />
+	<img src="../assets/boo_man-group-og.jpg" />
+	<img src="../assets/frankie.jpg"/>
+</div>
 <div class="content-body">
 	<p class="mat-display-1">Make a Difference to those that need it</p>
 	<router-outlet></router-outlet>
