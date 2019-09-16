@@ -6,7 +6,7 @@ import { MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/mate
 import { DonateComponent } from './components/donate.component';
 import { LocationService } from './location.service';
 import { HttpClientModule } from '@angular/common/http';
-import { IntroRoutingModule } from './donate-routing.module';
+import { DonateRoutingModule } from './donate-routing.module';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { IntroRoutingModule } from './donate-routing.module';
   imports: [
     BrowserAnimationsModule,
 	BrowserModule,
-	IntroRoutingModule,
+	DonateRoutingModule,
 	MatCardModule,
 	MatFormFieldModule,
 	MatInputModule,
@@ -25,4 +25,4 @@ import { IntroRoutingModule } from './donate-routing.module';
   exports: [DonateComponent],
   providers: [ LocationService ]
 })
-export class IntroModule { }
+export class DonateModule { }

@@ -6,8 +6,7 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { IntroModule } from './donate/donate.module';
-import { IntroComponent } from './donate/components/donate.component';
+import { DonateModule } from './donate/donate.module';
 import { MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about/about.component';
@@ -20,7 +19,7 @@ import { AboutComponent } from './about/about/about.component';
   ],
   imports: [
 	AppRoutingModule,
-	IntroModule,
+	DonateModule,
     BrowserAnimationsModule,
     BrowserModule,
 	MatSidenavModule,
