@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,12 +7,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Operation Turkey Meats';
+	@ViewChild('nav') public nav;
+	@HostListener('window:scroll', ['$event'])
+	onScroll(event) {
+		if (window.pageYOffset > 150) {
+			this.nav._elementRef.nativeElement.classList.add('hide');
+		} else {
+			this.nav._elementRef.nativeElement.classList.remove('hide'); 
+		}
+	}
 
-  constructor(public router: Router) { }
+	public title = 'Operation Turkey Meats';
 
-  public redirectDonate() {
+	constructor(public router: Router) { }
+
+	public redirectDonate() {
 	console.log('HERE');
 	this.router.navigate(['/donate']);
-  }
+	}
 }
