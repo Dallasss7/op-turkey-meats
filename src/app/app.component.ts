@@ -21,16 +21,21 @@ export class AppComponent implements OnInit {
     }
   }
 
-  constructor(public router: Router, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(
+    public router: Router,
+    iconRegistry: MatIconRegistry,
+    sanitizer: DomSanitizer
+  ) {
     iconRegistry.addSvgIcon(
-        'menu',
-        sanitizer.bypassSecurityTrustResourceUrl('assets/menu-24px.svg'));
+      "menu",
+      sanitizer.bypassSecurityTrustResourceUrl("assets/menu-24px.svg")
+    );
   }
 
   ngOnInit() {
-	  if (window.innerWidth < 600) {
-		this.isMobile = true;
-	  }
+    if (window.innerWidth < 600) {
+      this.isMobile = true;
+    }
   }
 
   public redirectDonate() {
