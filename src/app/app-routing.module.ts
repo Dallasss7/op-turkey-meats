@@ -5,7 +5,7 @@ import { AboutComponent } from "./about/about/about.component";
 const appRoutes: Routes = [{ path: "about", component: AboutComponent }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

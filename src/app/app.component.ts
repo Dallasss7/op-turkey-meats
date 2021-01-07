@@ -9,7 +9,7 @@ import { DomSanitizer } from "@angular/platform-browser";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
-  @ViewChild("nav") public nav;
+  @ViewChild("nav", { static: true }) public nav;
   public title = "Operation Turkey Meats";
   public isMobile: boolean;
   @HostListener("window:scroll", ["$event"])
