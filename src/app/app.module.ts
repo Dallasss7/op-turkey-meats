@@ -7,12 +7,10 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { DonateModule } from "./donate/donate.module";
-import {
-  MatSidenavModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatListModule
-} from "@angular/material";
+import { MatIconModule } from "@angular/material/icon";
+import { MatListModule } from "@angular/material/list";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatToolbarModule } from "@angular/material/toolbar";
 import { AppRoutingModule } from "./app-routing.module";
 import { AboutComponent } from "./about/about/about.component";
 

@@ -2,11 +2,9 @@ import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 
-import {
-  MatCardModule,
-  MatFormFieldModule,
-  MatInputModule
-} from "@angular/material";
+import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
 import { DonateComponent } from "./components/donate.component";
 import { LocationService } from "./location.service";
 import { HttpClientModule } from "@angular/common/http";
