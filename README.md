@@ -1,5 +1,7 @@
 # OperationTurkeyMeats
 
+This is the beginning of a platform for allowing users to contribute to local dog shelters through a webapp
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
 ## Development server
